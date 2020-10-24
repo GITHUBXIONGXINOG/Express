@@ -1,0 +1,13 @@
+{{msg}}
+
+<ul>
+<!--    each 循环
+    users添加到 app.locals.users ,里面的数据可以直接拿到
+-->
+    {{each users}}
+    <li>
+        {{$value.name}}
+        {{$value.age}}
+    </li>
+    {{/each}}
+</ul>
